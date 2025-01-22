@@ -82,13 +82,13 @@ body {
  height: 100dvh;
  background: rgb(249, 249, 249);
  background: linear-gradient(180deg, var(--light) 0%, var(--primary) 70%);
- padding: 50px 30px 40px;
+ padding: 50px 30px 15px;
  display: grid;
  place-content: end center;
 
  >main {
   display: grid;
-  gap: 25px;
+  gap: 20px;
   justify-items: center;
   text-align: center;
   >img:nth-child(1) {
@@ -125,7 +125,7 @@ body {
    display: flex;
    justify-content: space-between;
    >a {
-    width: 70px;
+    width: 60px;
    aspect-ratio: 1;
    border-radius: 100%;
    background-color: var(--light);
@@ -141,7 +141,7 @@ body {
   >.cta {
    background-color: var(--light);
    width: 100%;
-   padding: 15px 25px;
+   padding: 12px;
    border-radius: 100px;
    box-shadow: 0px 4px 12px var(--darkThin);
    transition: box-shadow 250ms ease-in-out;
