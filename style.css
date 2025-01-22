@@ -68,7 +68,7 @@ p {
 }
 
 img {
- max-width: 150px;
+ max-width: 120px;
  aspect-ratio: 1;
  object-fit: cover;
 }
@@ -102,9 +102,9 @@ body {
     gap: 20px;
     >a {
      padding: 10px;
-     scale: 1.2;
      display: grid;
      place-content: center;
+     scale: 1.1;
      transition: scale 250ms ease-in-out;
     }
     >a:hover {
@@ -112,6 +112,15 @@ body {
     }
    }
   }
+
+  >.qr {
+   scale: 1.1;
+     transition: scale 250ms ease-in-out;
+  }
+  >.qr:hover {
+   scale: 1;
+  }
+
   >.ctaWrapper {
    width: 100%;
    display: flex;
