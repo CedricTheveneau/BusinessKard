@@ -17,7 +17,7 @@
  --dark: rgba(20, 20, 20, 1);
  --darkLight: rgba(20, 20, 20, 0.6);
  --darkThin: rgba(20, 20, 20, 0.3);
- --heroSize: 33.3px;
+ --heroSize: 30px;
  --heroWeight: 900;
  --display: 'Lexend', sans-serif;
  --subtitleSize: 20.56px;
@@ -96,7 +96,6 @@ body {
   }
 
   >.stack {
-   margin-top: 20px;
    >.main {
     display: flex;
     gap: 20px;
