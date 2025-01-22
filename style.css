@@ -1,0 +1,145 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+ --primary: rgba(176, 171, 237, 1);
+ --light: rgba(249, 249, 249, 1);
+ --dark: rgba(20, 20, 20, 1);
+ --darkLight: rgba(20, 20, 20, 0.6);
+ --darkThin: rgba(20, 20, 20, 0.3);
+ --heroSize: 33.3px;
+ --heroWeight: 900;
+ --display: 'Lexend', sans-serif;
+ --subtitleSize: 20.56px;
+ --subtitleWeight: 400;
+ --titleSize: 19.42px;
+ --titleWeight: 400;
+ --bodySize: 14.83px;
+ --bodyWeight: 400;
+ --body: 'Quicksand', 'sans-serif';
+ --ctaSize: 25.42px;
+}
+
+/* General style */
+h1,
+h2,
+h3,
+.cta {
+ font-family: var(--display);
+}
+
+h1,
+.cta {
+ font-weight: var(--heroWeight);
+ color: var(--dark);
+ text-decoration: none;
+}
+
+h1 {
+ font-size: var(--heroSize);
+}
+
+h2 {
+ font-size: var(--subtitleSize);
+ font-weight: var(--subtitleWeight);
+}
+
+h3 {
+ font-size: var(--titleSize);
+ font-weight: var(--titleWeight);
+ color: var(--darkLight);
+}
+
+p {
+ font-family: var(--body);
+ font-size: var(--bodySize);
+ font-weight: var(--bodyWeight);
+ color: var(--darkThin);
+}
+
+img {
+ max-width: 150px;
+ aspect-ratio: 1;
+ object-fit: cover;
+}
+
+.cta {
+ font-size: var(--ctaSize);
+}
+
+/* Nested cascade style */
+body {
+ height: 100dvh;
+ background: rgb(249, 249, 249);
+ background: linear-gradient(180deg, var(--light) 0%, var(--primary) 70%);
+ padding: 50px 30px 40px;
+ display: grid;
+ place-content: end center;
+
+ >main {
+  display: grid;
+  gap: 25px;
+  justify-items: center;
+  text-align: center;
+  >img:nth-child(1) {
+   border-radius: 100%;
+  }
+
+  >.stack {
+   margin-top: 20px;
+   >.main {
+    display: flex;
+    gap: 20px;
+    >a {
+     padding: 10px;
+     scale: 1.2;
+     display: grid;
+     place-content: center;
+     transition: scale 250ms ease-in-out;
+    }
+    >a:hover {
+     scale: 1;
+    }
+   }
+  }
+  >.ctaWrapper {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   >a {
+    width: 70px;
+   aspect-ratio: 1;
+   border-radius: 100%;
+   background-color: var(--light);
+   display: grid;
+   place-content: center;
+   box-shadow: 0px 4px 12px var(--darkThin);
+   transition: box-shadow 250ms ease-in-out;
+   }
+   >a:hover {
+   box-shadow: 0px 0px 0px var(--darkThin);
+   }
+  }
+  >.cta {
+   background-color: var(--light);
+   width: 100%;
+   padding: 15px 25px;
+   border-radius: 100px;
+   box-shadow: 0px 4px 12px var(--darkThin);
+   transition: box-shadow 250ms ease-in-out;
+  }
+  >.cta:hover {
+  box-shadow: 0px 0px 0px var(--darkThin);
+  }
+ }
+}
