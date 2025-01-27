@@ -162,6 +162,10 @@ body {
   >.ctaWrapper.twin {
     display: flex;
     gap: 20px;
+    >a.exception {
+      margin-bottom: 5px;
+      padding: 10px;
+     }
   }
   >.cta {
    background-color: var(--light);
